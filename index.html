@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <title>kash-portflio</title>
+</head>
+<body>
+   
+
+    <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+<!--Main Navigation-->
+<header >
+    <!-- Main navigation container -->
+    <nav
+      class="flex-no-wrap relative flex w-full items-center justify-between bg-neutral-100 py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4"
+      data-te-navbar-ref>
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="block border-0 bg-transparent px-2 text-neutral-500 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button"
+          data-te-collapse-init
+          data-te-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <!-- Hamburger icon -->
+          <span class="[&>svg]:w-7">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="h-7 w-7">
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+        </button>
+  
+        <!-- Collapsible navigation container -->
+        <div
+          class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1"
+          data-te-collapse-item>
+          <!-- Logo -->
+          <a
+            class="mb-4 mr-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0 font-semibold "
+            href="#">
+            kash-portflio
+          </a>
+          <!-- Left navigation links -->
+          <ul
+            class="list-style-none mr-auto flex flex-col pl-0 lg:flex-row"
+            data-te-navbar-nav-ref>
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+              <!-- home link -->
+              <a
+                class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-zinc-400"
+                href="#"
+                data-te-nav-link-ref
+                >Home</a
+              >
+            </li>
+            <!-- Skillslink -->
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+              <a
+                class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                href="#"
+                data-te-nav-link-ref
+                >Skills</a
+              >
+            </li>
+            <!-- Projects link -->
+            <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                <a
+                  class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Projects</a
+                >
+              </li>
+              <!-- Contact link -->
+              <li class="mb-4 lg:mb-0 lg:pr-2" data-te-nav-item-ref>
+                <a
+                  class="text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 lg:px-2 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+                  href="#"
+                  data-te-nav-link-ref
+                  >Contact me</a
+                >
+              </li>
+            
+          </ul>
+        </div>
+  
+        <!-- Right elements -->
+        <div class="relative flex items-center">
+          <!-- Cart Icon -->
+          <a
+            class="mr-4 text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+            href="#">
+            <span class="[&>svg]:w-5">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="h-5 w-5">
+                <path
+                  d="M2.25 2.25a.75.75 0 000 1.5h1.386c.17 0 .318.114.362.278l2.558 9.592a3.752 3.752 0 00-2.806 3.63c0 .414.336.75.75.75h15.75a.75.75 0 000-1.5H5.378A2.25 2.25 0 017.5 15h11.218a.75.75 0 00.674-.421 60.358 60.358 0 002.96-7.228.75.75 0 00-.525-.965A60.864 60.864 0 005.68 4.509l-.232-.867A1.875 1.875 0 003.636 2.25H2.25zM3.75 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zM16.5 20.25a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z" />
+              </svg>
+            </span>
+          </a>
+  
+          <!-- Container with two dropdown menus -->
+          <div class="relative" data-te-dropdown-ref>
+            <!-- First dropdown trigger -->
+            <a
+              class="hidden-arrow mr-4 flex items-center text-neutral-500 hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:text-neutral-200 dark:hover:text-neutral-300 dark:focus:text-neutral-300 [&.active]:text-black/90 dark:[&.active]:text-neutral-400"
+              href="#"
+              id="dropdownMenuButton1"
+              role="button"
+              data-te-dropdown-toggle-ref
+              aria-expanded="false">
+              <!-- Dropdown trigger icon -->
+              <span class="[&>svg]:w-5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <!-- Notification counter -->
+              <span
+                class="absolute -mt-2.5 ml-2 rounded-[0.37rem] bg-danger px-[0.45em] py-[0.2em] text-[0.6rem] leading-none text-white"
+                >1</span
+              >
+            </a>
+            <!-- First dropdown menu -->
+            <ul
+              class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-te-dropdown-menu-ref>
+              <!-- First dropdown menu items -->
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Another action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Something else here</a
+                >
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Second dropdown container -->
+          <div class="relative" data-te-dropdown-ref>
+            <!-- Second dropdown trigger -->
+            <a
+              class="hidden-arrow flex items-center whitespace-nowrap transition duration-150 ease-in-out motion-reduce:transition-none"
+              href="#"
+              id="dropdownMenuButton2"
+              role="button"
+              data-te-dropdown-toggle-ref
+              aria-expanded="false">
+              <!-- User avatar -->
+              <img
+                src="https://tecdn.b-cdn.net/img/new/avatars/2.jpg"
+                class="rounded-full"
+                style="height: 25px; width: 25px"
+                alt=""
+                loading="lazy" />
+            </a>
+            <!-- Second dropdown menu -->
+            <ul
+              class="absolute left-auto right-0 z-[1000] float-left m-0 mt-1 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-neutral-700 [&[data-te-dropdown-show]]:block"
+              aria-labelledby="dropdownMenuButton2"
+              data-te-dropdown-menu-ref>
+              <!-- Second dropdown menu items -->
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Another action</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-transparent px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-neutral-100 active:text-neutral-800 active:no-underline disabled:pointer-events-none disabled:bg-transparent disabled:text-neutral-400 dark:text-neutral-200 dark:hover:bg-white/30"
+                  href="#"
+                  data-te-dropdown-item-ref
+                  >Something else here</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+   
+  <!--Main Navigation-->
+<main>
+
+    <!-- Home section  -->
+<section id="home" class="mb-32">
+    <div class="relative overflow-hidden bg-cover bg-no-repeat" style="
+    background-position: 50%;
+    background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxQUEhYUFBMWFxYYGSAbGhkZGSAhHhweIR4iIiAZHCAbISkhGhsmHhkfIjQiJiosLy8vHCA1OjUuOSkvLywBCgoKDg0OHBAQHC4mISc0OTcwLi4uLi4uLi4uNDAuLi4uLi4uLi4uLi4uMC4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgABB//EAEUQAAECBQIEBAMFBgUDAgcBAAECEQADEiExBEEFIlFhBhNxgTKRoRQjQrHwJFJiwdHhM3KCkvEHFaJDYyVTc6OywtI1/8QAGQEAAwEBAQAAAAAAAAAAAAAAAQIDAAQF/8QALhEAAgIBAwMEAAQHAQAAAAAAAAECESEDEjFBcYEiMlFhBEKh8DNDkbHB0fEj/9oADAMBAAIRAxEAPwD4q1hcZxFlIod7ubegH9Yu1EpPlSiGqNT9+YgfKmKU/AQ2DnuWtnok3aFELdaBVbATb9NHTRyy7jBLdPX3EXz5IClVcvKWHe7Y9P1mKZySAg5dNh2H5XvCoCZYwKJYBY1EOTi4ubWb8ou41pfKnrliYhdKQ6gQUqNAJZgBYkj23ivTJ/wrAisH6pBBv+nMT8QaYy9StBJJGatnALd7bxlyBcjXTyatSazL5UKIdqGPKxsGsWu9x2aLODaauciWTy+YTUAWBrIarrd7D54F8vRk6m5ACpeQSz8rjPcdMtEOHzTKmyFhCP8AHIBCs85sw/D6xJu0c7lax8f7PPGGhCNeuUkpprQHItdEskltnJx0gnxQsK1qlJXLlJMlLsWSUkhwg93s3T3jzxjqAvXz3KUhBQkUGybICqSGdlVet488SyVTtZMdKgfLcBwCBXZ3JBAdrQb4MnldgKVxBalaeUUlpaeW1y6S1rP7G+xBvA2uCSlSklNa5rBNSSbKUxKQLDv6Zg3QaIidpyDTUHJAuwFwfVmgccLpmqclQE6ipr2UL2OSFXjKrGTVl2tkrMyf5i0KUlCXUzhToV8FgzVZ7H2aeHdOftWmJKAFSg1ZdnltVgPbAvcQT4k4WlOp1YSAEoQk2SN0KFh+HnOQ2O97eFSE/atKJJBmHTjNmPl2yWd6m7gbQjkSnK0IqCpMxQelU9wE5DqWzhmZ/wCUG6XVCWjVpISoqVKepLsA9h8WXbbFi8B8QmBEmYkJc+ctl9gbG3U9XxHvAZSlSNQWRSUIClqtSAmxABuRlmOLRuls1YbYTKlfta6hcySWuc07GlrXbb8p+AdQJc9B8uoFTFkVEAvzO/Kxa7fPMR0Zr1SiFO0pWSr0YkFyzj5CFPAJtM5DgUudx+6rtj1g1gKVqhtpeLUyNQTJSaizFDUgqG5JZLqZmOweGvhSeBK1aShPNKUkKoci5uSauUVfleMdrdSQJiQzFTZD5SpwwxyDDDtG88IAq0+sCEoLy1A1NZ3FgALls9hCtUhZxpGH4fKSpkEJV5iS4YlSaUhQa4yRsRZ4NlLCNOUBAIE1Rch2ZQt8TCw6H12grwvIAnyXPxBRZhugfhI5sRl+JBRUsj4KidsVf1h16nRSPqdD9dKuHKWAgtM3Te9IsSol998Zg3hOgCpC1tLDpP8AiJLjaxqDFgSduaXa8V8O8Pj/ALeudWklVWQ7Ul3SXDHlv2O7R5w7i9OmU6ZJDMylB7v+Gl8gX7IvaFvmvkRu7Ufkonacp0EmaKCCtgkIFfxLcVEfkHgqRKA4VPUAxmKHKpIJCUTEAc7PUCvt8XWKNOmjQy5pWFJMwpoKXourm7KNVjfEXTdeTwsykplsVk1AcwNaLKNqTykYwR2g5/UZW8fZ54xk0S25ZlaUssJBISVqJ5hc80u2Ay97Qm1S5gkyit3bpaylkM27Ak7NRB3GNayAg0HkSHUxWAolgAl6KaHyfiB/E0DyyDJQSQUiWxcfxAM7XL27Bz2grCyGLqOQfUJ/YR/hhNbm3OVBwD/lptA+pCRpwQUkqUBYBxy5cAHNmOGNt4EKj5OQyVks55nCRcdBT9TF+qlvp0L5RzEkOSS4Sn5il2fc9DFKLV/cjONVKlqBFISwDMzsGAD3SOubxZxKWlKAxqS5FXskt8IAN8bMbQJxLW+apCmCSEBJAw4e9zkhj6kxfqphoSl7CggVG5KEjHsR2vBzgNNUXoNWjWeV0zUu2WIsTbDjY+1oG4piWGY0YZj1H+ljb3hnpNFTw6fMKxzTJaQne1yWfD2fsekK+IKURLCwlwmzG7YAV0amMuTKrwV69IFLPcPfH+noGa0cuSPJqBHxs29gf5H6iC9ZJFUsEjBJyzObW25XDdQYHmghCkjAmEf3fJjJhTwXeJJNE4odKmTlOMmKtcsFWE2AGO23b1vEeLF5hJShJYWSSQLdSTeC9Rp6BLHl1EoCiaTuTaymsGHtAfCA+EC6rUTDIkoU1AqoYXHMXfq5JigJ+6Uf4u1ur73cN6Ki7ULJkyktYOQXG6lYGQLZioP5ahUAKvha5YZ9A/1hhwlHKVi90EC4O5uSBjP0ievmSyiSAkghLKJa5pTcfPftBfE5NK1BBK/uwSRsHNz2ZjCqepQCFEMG5bnZID5tta0BZEWchHDkiqUP/cA2/eT/AFgzxcB9tmG1wDc2+AdAGhbImWRzBP3jhV3TcczYbt2MT4qSZ6iXc3ZQZnS4SX6AgegGI1ZDWTRzltqAyAfuylgA1wgEhhcMSAc/KBpCUImSVkpAVOJUCzJZfxEi7M1ux9Is1i1JmoNiaCLO2UsGwALYzB8vRJVK0pVKliqcxU45wZpFJ3YXF/7RFukcu6kv38lHiTSCVxCYVLSsompLsySnlIxlk2fdjD7xNLH26aUEFJkMCKSmlS3CgwYp3O+fWE/iZNWpUMBKkIIJLGyfifDX+UN/GHNxBKJaBKHkMEILpIBWqmzMgsSYXmhbuuxhuHziJzqSSEqLpAHSkhiCHb1xGil6OqWuWSCftJdSBk8l0npctGPKRX7iG2i1n3MuWGSrzAoG/NkP0sbZ/DFJRLakOGh7x7Rpk6jUyUlRaXZRIIsms1OHqLEDe7Rf4L4kFavThSByJCXUA7pSL+nLk36Mc+aicVzdWpYUFGXUEquWpULkWsDnvC7T6gSJ0hYJKihNub8QFgXOXIs3pCcolVqiXGVkaRTfCqeW9OY/Pv3HaF/AZyDK1AUBUJTpc2tylr3Wyre8Ga8kaEIKCUpmLAXtYZ7Ox/27PCThiCETFXYigt3L3bI5cd+0Mq2seKW19zWeGdUEaiYbkmUoONhUl/iJsw9ISaGaApJZfLUVEX2UxBBcWJcjJhj4WUfPMtQKlrlKlpId7nooXxiwtCVqxMSE3D5YbK/Xy6wFyBL1MXzZpVUs7kbPf1Nx/ONp4SnpVLnk0uUKSkrPwlne5I3A9cbRjG+6+HfP6/OD+CT1JQqlFQDlROAClvXYn2h5q0Pqx3RwNvC09QmoMumpKZiuYO7oFmFz8LM8KuITgqWtyHKyWpGaurfSHnhjUMtKaAQZS7Gzks4FVnsLCxqjH8SBE1YLuFEH1eFhmTF0szZpOH8SKdHSJgFJUSkjJbl3zc4G18CDtFph/wBvmsJamSCS7m7K5gByqS7ByxKcQn0vLpFEqF6gE3cuG6gfj6bdoI4VxhMvTmX5bkpVdhSfi+Ozn5izQKea+QNPLXyCTFBOmSWVcKTk083mXZmJDj5QfKleZotRNDAecVMSH5iksNzhrdRBmv0af+1IWPLLqF6eZ3W4q67N0S+5i/hurp4PMTSkgzAOrF3qLCysC5wIKljyMp+nyLvEWkRLQ1SHKEukWt5jVMEAFTDqMdohPkJ+zSk0NWPicc9KXZmcMWdj063ZeK+Iy9V/hypaAlAnFarKUEqUkoT1BrdiAXTsIXaHXoMkBUtNMpIqBU1TrN0hnq6l8esBXSEV7UUzwlXDmHlgpnAC4KyCFNbKUuFZ7mB9Twoo4cJpCbzU3oNXwqsVPZN8MHIECq01MlanRcpIFXNm3Lszm52UYc66W/C5ZdAaYFM/MXSzBLXG/wDzDXVV8lL21XyJOKmlEtBQxpDkWflHq5vdmu8UTkhj0FAxh07dCWv3ivVLcJsjAAYh7JActuW+sMNelKZUsUJBVQagdglO2x5r9wYfih+KQ1EhuDqUaUkzwpIwVBqSe7FvnCni85KjL5WZAwzGyRZujH5w40+oSeFTgQkkzwEq3HKkt/lcD3EJOKyafL5EpdD8rno6js5f6Qq5yLHn+pDUKKvKBCSUj8LHuxBH6vHmplHy1EUgJmkNZ3vf/L/SCNNI+8kFIckejs733OR0YDvFfEyQldgCJqjb1LY/QYdYKfRDJ8JHniMAzjSABSLJwlw7WDWdov4mlCfLrCyVSwoM2CTb5v7NE/Gkgy9SpJpegOwYHO3UY9ot4gpSRKChmUkgctgXLG3Uk+hEBvCA3hGfXMV5aH+EEhPzcv7m3vBnlvpSu/8AikDp8Ke7kxLWzQdJITUHBWSHD3UbkZsBZ/3jEJc79lKT/wDMcepCX+iB/uijKsu85Ncx7vLIfl7mzN275iegJVNkpIBASdgQeR2vZwkJfopycxGammZMSlLgodg/KN8A984drQRwoETNPdRcLIsd0U0pcsWKWGPyhWI+G/oBmSTLpe4CywsXZRBe+9OP6iIcbA+0Lpx7fuj90kfWCeITqaXctMUp3yQu/v3bcRXxJZXqlApu4SxDfCAnGzs8ZGi3z3NLTK1M6XLlJSgy5Zr6OAn6VP7EwMjUKWnToopSmZZsKJUXKSXDO79CYN1KVyZ0tQlFNckC/Q0BRFI6H/yeI6DSJWjTJCwlfmHGw8wsbnNiYjijlbSSfT/pSZjzpilpzNPLYi7NnsNm3jReJQft8wg0jyC4WLgAkBO7l0pIwSD3hTx+RROnISkKAUC7U/iwxDBmp2teK9NNnarUK8xq/KIc+rhQwHAPpaE+xOcmSlB1qJe97ZuY0ulk/d1MABNpcNU/IffJ+ZjO6mSTNXhP4mF2BYgD2IhtIklMj/ELpnAt/oHMzPuBn2i8zp1MpDXXaiUmbqRzmpLAkXDhVRL/ANtoS6BJWtJUk8o6WPLZn2pAPvBviLTFM6YmsKUkJqX+8WUSwa2cdo0XAZKTN0wBJqlJcdwhKbZ3P0iTdIi5bY9xPrQBw1rOJq8t3uLv9IzvDuIeXLmJpBrwdw35Zz2htxLVH7MUAqSkTVcnRw4BLZDEZ3HeBvD3Da5OomPZMshr7gl7f5N7XzDqtrseKWx7vk0X/TxMg6lRmJLCQopYOQokBzS+ylXz8MYfVzqVrCWZVi3RwbP3SI2fgw06gkoqSJBSokkCX/ES2xTt1jD8R/xFevV/rvBh7h9P3PsNZZP2Upc3ItZmq9X+Ii7btFmn1Y06piUhKkqTSagTmoWBbbdi1u0VSZxOmKAMXepOHchje5Aw/wAIj3wrozNnU4ASom7WZjfrd/Zt4PR2Ho7NV/0/AM+SEy0LUoLAqAIcpa7XDDc94wnGpZTOWC9lEXznfvH0LwPNXKNaWqSlYB3egpyQQwpUbdvf5/x6epc+YpQZSlqJHQkkkfWF03cmJoO5MN0aQZCnI3yB7XOPp2geRKPl1OwpVbY5F7M98ekQksJbvcY+lmf3dtoZcL4UpemnTQEMkOSXqABvT+EO29794Z4H9t9zQIneXwxBUgLAOD8JqKmJt8YdrF2HzW8CJ+w6jlSq+Szi6Lhy7+nT1hYqW0gHzLUm12JNXZqgS2doJ4fO/YpiQAOdyq7sKDbb8jC1jyTqk+464ma9DKmCVLFYAJAuClaxUAlNnZjfYQq8lP2eXMUEAK5XSTWGUcjAcpyBgjDiDdZwycjSrCkoRQlJN7zAVAvZ7g5f2hlw7hslemkKXLSWSQTURlRIURTc8pwS0JaSJuSivJm9Zp5p0IUaPKRMNLNU6rkEjJ5gb9C2DChExI0/wAqUogK3AFD/ADcfWGnF+JKEk6dklCVVJIYkbZZ3sXB6wbrOGFPCpawmU3mhRUD95dPwkH8PMk26JiidLJWMqSvqxLqtCoJSShIqSgAjJNKe5v1sGeC+McFEuUViZVZDWuARix79LgQw1shKkaQLpFSBd8BCQb/5gR/e0LOMy25awXKGYksAlsXbPqYCm20ZTbayDypaxpJlnFQcjFgHc46M38URWkpHPQXQ6eYOLVAdrDGSaRBSNQfss0OwKw/8WcuHwodMRGfQpCahdEosq/MXcbWYA9u8NeR7zn5JT5iR9mYAKAUFU+wtvf8Aq0BcSUAClk1Jmqe91XOfyi3VhAEkkBIKVOoPlrFxkXGL5gTiKU85BHxqbLqB/LD+8FLgaK4HH/UDWJm6pS0XSUgjF4qnTWRJCaT92Hqy5JPXDEQJ4pnpVqVqSGDJDdGSARba1u0e66an7tkJH3SH7lrmNVJGSqKAtXLaTKP71X0P94nJkfs6lt+NgfSl9/4+kW8R0lMiQtwQsK23BuHe5D9B7xRJSTJPMGSt6d70gnsDy/7TD9CnQbTtOoTZzFXLKJLsT6Zx6XHziHD1rROlLQxWEqN8Bpb7H90v/eClzliZNwXlBCmdmw90v8Qfs+8e6HTrRO05KgVKCiLMySgcuL8p3id4I3jPwBarSc6AzjzSlzbC2ZiWAbv7wPxwS/tKvKUpSNlLDKNruB3hnJeYZFXxLnuSzXKw+zA3/KKvGxUddNqyGvb9wXtGi80aDzXc0GgnLmTpaSpE2mS6QvAegFPtR67xVwgkzZKbAIWcB7+YSwO+1u8B6UKlGVMBBK5agG6JIAfN/wC0WeHpyk6lITSlfncruQk8t7O4dKXESaOdrDoc+JJZVqp8s5SUpD9CRSpWXVe59YD8OAJ1OoCRUry7KcAA1Jc32LnEOOP6Rc/Wz60DlWlD1FmZI2Z+pfGIzXDJvlz56UchMsotgOQCfdTGFVZQkappGW1U1XmEuX6/l9I1XCNMVaOrJM5n7NLfu1/yjMztMSsuQMHrYszfMRruA6hYkeRhAmhVTWJPl2HcAA+4i2pwjq1faqDOM6CYmZqTMQkEIFQTcVMttwzhJOOnZ4eCpRVqZCRuD8qQNm2EQ8YcSmSdZqUTVBfmJIdADfCQn0Z7+kMfBoMrW6elQUlUoMr1SLfPr1ibWMkGmlkxfHCRUC71l36km+Xdu0NfCo/Y9UdqQ/uFjqOvf0gjxasq09VrzlE9aiVEnFgwG/X2E8LIfS6nsl/orNr43h27h5KyzDyM/DU2XK1I8wChcpaXZwMm4GSwp63EYvj4HnzKWaoswaz9DiNl4YCTqtOVuQylYF+Rw4xtv2jIeJABqZoH76t336xtP3B0X6vAVoJoGlmpc3I/C+CnfAu3s/Z23gVIl6gkuD5RIfuAXtce0ZySg+USHa4N/R7N3Hyg3wyombn8PX+JNr/KGmsMOovTI2Pg7UJM2TU5QZrG5YglTv1+mYx3jhIGsnMAAFkMOxbf0jVeGCJeo05AFNeKrO67v/LeMv46WDrJxAA5zgN+rwmlW4n+Hre6FUucqgpdg3TPv7QdotOoyZigEsE3cqfOQ1ncYgbTI+7epIFxcXwL+l2gmSgmStVAZg59CB87E27xWReTKZYPlv8AhY9MmoA+zfQQ84dpP2FarF1Ejszf/wA/WEitQkyAhuYF3vgVd23G3WHXDph/7fMDlvMw/wDk7f0hWsAkm15NB4s1iE/dCUCoynrfASZirBtxZvTtAfCpswSkpSlJaWqmssxNPwhrqa++SIv4/MokJBIUsy0mslixWztkggu2APSFU7U06eWUyQ4sFvkvVyjNusc6Vqjj23FL7F3FZJEtRKU3UxIfOdw220NdZO/+FJSxcLDlrM1rtc2Fns59l+rl/sgtzJU6ieisMexA+Z6RdImNw+YCygqgi9wQou1i7kpfGM7RTmu5XlL6ZVqJSjKlFNwmW52JLB2O2R6wFNnOAWQQSlJG4oSE39c+0cuaUols2Gbryg4929jEuKqSJqGpSHB5QQCGSxY9R9SYZLoPFPjuNNRwBCeHr1Dc3mhAwzUv7Fw3/MR4iQiXLCkg/dIAsCXL3bLMo32tBUyak8NnVEP56aQ+GQSWw0eztAVIBSE1eQHN3L0uPQB39Uwt/JPdxu+TPa1KSiQkJASxFjzFRJBJ6BwDcYJhbxBPOpksK1B8vc27+sP5kgEaUH4lJWDbbZgbG0JuKkJmLTSGExTegUbNFYM6dOXQp1enKVEE1bgu7hyLv6Q4lcJUtCFJFikdoE43qFLWlUwJSooFhbBIv3IALxtZ3BUrlaZXmFD6eWWfqCf5t7QJywrF1JOlZmONal+H6OWw5PNLgjdQVfuyxbtCHSgtYm6gLeoI+sOuMSU/YdKvzKlq810/uBJSkD5JHzhRo1MEkgEVP1Lgpdx0aHXBSPtfc0StUPMm1EiqSAACbkbODix+nvWJtMzTOQkJlllDLUfF37flmCPFSEfa1lCWFAJBB6kP6ENAMopRN05FJISSXNqqXD2tdrdvnNZIxyr+i3QzZhXKJSABqHDKNjWm2cOGeLPG60jXqUACmlJwwagM2bM0L5dpnxOBMsCXJ5xe9iYn4s4h5uqXNpapKWADNyAOwxe8FLI6jkayZykrkmjzAZdgwsKhygdmd/4j0h34d4QUTpE6w8yYbAuzKUOn/t/U+y7gerClyyGAElbA2YhQID3cEhID9Xhho38zTgopT5x3diZqgPYG5iEr4OTUtYQVxbiqjrdQQkMJoFIUADzpAv1YfMwp0mnJ1U8KQHEpTAEWLClQ64F73IgviZTM1GopCSPNSHHw7B2AO/TqekAcH1QTPn1ApUZRTQzuzEpfIehwWNrQEuRUuaMnr1LTNVkEFulhYezAQ14XLmhCZ1aqfNZn3FJc3uWI22juGUzNQQUJW9IAJCRlIGetgexLQ84ZMNa5aZDDzipIJ5U3Syf4mYP2MWnKkdM50qoSeNJ6laklSQksHCS4dsv3z7w14DxSmdImLIZKKRb91CRcdyMwq8cS1p1k2sJBqsElw2B9AIh9rTOVKqQQhEsIZJyUi6h3JvGq4ozVwQy8RrfSoISCFLUan5viWyWfDOX7wL4W1ZRLmpGFNu2yv0354gjikgfYUlx/iq6Pasv6XF/6QN4Xlgy5xLgJTU7WtZvXmx6wPyMH8t9xj4aQftMgpUxKVMWdiJQ23jL+IFvqJhvdZN+5PSHml1h06pExgeVRY4+EB7fP2jPcXm1TlqAZ1EsAzXw0Npr1WNop7r+v8jfQ6NatHMUBYEuf9j79H22PWCPBKE/aE+l/o/1t/XBC02vKNKqWCr7w3DMAHYkHd6QD/aDvCKfL1FasBBUdrNUrPYH1LCxMCV0wTvbKx/wIHzknl+NbVE5BWbWzszbxjfFy31U0/wAZZ+gsM9hGj0HEUpKFqoapRYta5U4cs7sL/wDGQ4zqhMnTFjClEj0e1toGknubE/Dxe9sN4dJ+4mKYF7YNmDvizvu2DA0mZ90pNAL3Culwf/1UP9Rgnh2uokKSz1Et/wCBvbt9TFA0R8kqDHCv9IqCs/xED/SfWKdcl+rv5OEv7l6XANy43fYXODDXh0z9iWNvMvn+Du0KJUgplqUQCClhf4SWYkeh+sNdCj9imK/j7fwe/wAozC+Deq8OhfDhWQVolukjI56s/wCW3TaM3xDhEw6eVSgEqTUkuHsyflSTY9YccK4zVpaXQHQE5vzTF2I6coPsesD8bH3EqpSaaGyB7kvipItHJFtOvs86LkpV9iKVw5Z0k1wAsF85Dh32f0hYZKk6VRpPMwdxgEFmz8SQY0mtmKVoJiglISpbkhtzgN3IPS27xHTrR/2qYPLRWKTW9ykqApb/AFv6iKxb/UtCT/UxqlpaWxBLXD4LN03dzneCNQkqnJQRTSoJJDFrtY4Ic27QTquH/dyiyGWkNSDVyoB5tgT+V8QLqRzuGIAQkAZ5UgXHUkRW7OncnwPdVqUytCuUHWFzQuotsmmk7uSFX9IF08xUuU5WTXLUlJJuLJdOWpenbPpA/wBsbSzZdIdS01F8MA1sAOr/AMY5ZWZaqQSEJCSXNgoqLCxsSkH2haE29H8k9YkJRJIATUC5dz8JB/n8hCLiAuotYrUx63MF6hdaJZZQaxd2Vb8OzAAi0DcQlBISySLqvswUR8w0UiqLQjQZxgupKjf7sfq98gw81HFEBElI1FFMpKSPLJuHDg1YMZ3iMsoTLellICgQXLFwx2BBSbd+8aOdxDypclKkrcyUm604uA1sMBArAjWEZ3WJH2aSdzW+LsoMzX63MBSSQgWLVZ72/K3zhtxaZVotLhx5osGtUn5m2YB08p5L2+JXR7BGxzkQ/QqnjyNJfmKVNUtakkS78ruCXYtgR1NE2QpIKlKBZLkFyKRcPe4NhDPiWolonzgtPxygEWdiTvUMO+2G3jMzplBQTc03cDJc47FWYSOSUMhk2WKErQTX5qqCHINxSz9e98QDxoHzTUXJCTvZ0ghLm5YEB92g7QTkhEsdJouWw474YHteBvES0mcooZiBhmdtm2ho8lI+6jS+EdIhcyUFH8Cioggc1Q5SGDslKSc/EIP0yyJiQEu0wsircTFFvf1we8B+GtKiZMkomXqQqzs7kMLE3eofKxxEfJMqcmYhKnM1RYXZlkADqS0c8ss49TMhjOWJetmoCEpHmgBINk3RYXbtmB+GIEzVzVKBB8tRDbEFtsDrEftFcydMUm5IJChd6Uk2a3wmL+B6hP2mcw+KUUsR/EHPYun6wrdWTbq39GQkCmYpzS27O1xtGm0hWyimw8xLLZ+Zkbbdf9TRmNUD5q2VSxZ7izsMe0HaCesKoK7haTU53Yv/AOKdusWkrR1yjuVhX/UFK/tR8wEKbf1N/f4m/igY61EoSVpQCyeYOzlhct847xjV9o51VKIcmqp7nfeGfAeFImzZCFoJBS5zfkSf7/pzsKKsDrarE07UrGmCVFwpVSX2+MKba5Y+3cw88FEjT6noQx/2r+UC8f0KE6YLSGPmqFNmCal2G9rfoiLvCKn02pSHCgkKcDoFBu2fzgPMfIJU9N9xRxFdpTnCfpSnoPXrg3hNPJqLly8OOJZlFv8A08vm1/o0JpvxGKQ4K6XAZNm/dJAw7/E+LY2dzGi8JrWsaiYVEq8umokk/CQH3sEj5RnZkv7tLAubfrf/AIjTeF9OfI1KaVXQGw78zM/vjoYTUraJqtbAXi+maUhiLJcuNyBbFvrGVmC8a7WupBpz5dwB6jD2JYbPftbIrzB0ng34Z4Ydow6WDO+D7D+cE6iYTLSKi1D0m+xu+0VaHhaloK0qAZ8vsAc43h5wLSiZpphUGTLCiosbm1LHYubpcW9YMmgzkln7M6lHK7WAbAyXa+dxjpGg4f8A/wCdM/8Aqd/4Pb5woGm+4K0odiQpXTpv3EGaNZ+xrH8fb+D3jN4G3WvI+4lp0p0woQguhCgrBepgroSUpZn3VaM5P1CihVRLUjLXLguOtukNkzphLTEgOlkm7lHmWLDZ3uQAYRapSUimkHkZzkF7H2H5xOCOfTWaH0mYU6GYCllEgOCcA4L2vScdIaAy/wDsy7c7pB+afc3Y+/aM9wzUqEiZWCoEEu5LFhdvQ/UwdNP/AMPmnyyxo56gwdSDSEu++QMPArPkXb6q+xNpeGEJ8xM1LgA0uxulRIv2BEAEFM8gEElYwXBcvn3gnzz5QSE3Acmn4nsA/VIWr9CAS/mJUReoOB1cWbb3iqTydUU3djOfIUmQq4UVLAUS7hQD22YvnqII4hqkoCUJSXVKNRVsGJ5RsQBb65iuYh9PMURkoZiHDC5NruH9y8Qm6RJAKxiUGDkX2bqGu/8AzAWeRFTywTToVSgkNLUp3GcUkj6lop4to1y1GpP4iKncEg3A93hrrUAabTFKwSa3S3V7m92c/wC6K+MyWk19ZqiLmzvtgfCd++8MnkopZRZ4g0y0y5NbAGWWYfxb2u4a8aqTxQGVK+6T/hgXBJLOCcWuDaMbx6UpNFTfAAzl8lQcKuLKA9ov1OrRTKdBfykbDpC1aJ7d0VYHrEgaSQxJJVMJB2ukMm+CGLNl4FkhJk3WHStwlrsaQT78v+09TFmt1gVp5MsC8utz1qU4A7X3imSEeUq58yoEWswbfuVG38I96Lg6OgTqZ5UsErKjTYl3yo9+sU8HUTPSq5IdVs2ST/KC+JiWJvKOWl7+qrhh0gLgs6icksDkMd3SR1HWAuBV7W/ocCnzJUtSAGmspVxUPMYhtm/lAnipSTPJSGFKN3wgDoOje0HaYhQkzFYVPNxn4knri5P6eAfFoH2lVLlLBickUi5sPyELHkWHIfJmFSpIdQCUC4yLguP1vGg4XLKJunWQAjzwACrH3i7HYC3yaM/4f4eVTEoWosZdWe6bC/SGWgl88tLPVNYJVh6zcnpeIzq6OTVaTpfvkv49qgudPIbmWlQBU9iE2d7tULwHwGZ+0OSxKGY7hyTcegPpBmrNc9fICoqQ6UkUhkoBAbI9toF4MD5s4iWCnymPLgLKb2woVZEDlMXmLRm+J6hXnLULEqLt6x7wrUK85LqN1AE9jaIagmasqLD9ARHT6ZVbDOcj2L+4jpxVHckttDjxmiUNQTKIKSAbEm5Fw5ubvBfCOLHzJCwGMsUqBJZVKbHoOUAFi9niHjfg82RMQJgUKkAioue5foS5A6EQbwSWhKtKWvdRAAJPxh8u7JG20SdbURlWxWEa6cJmnngpXT5xKUpAYAlJYFuqvzhL4f1JlytSgi5RSX2Yn61N9d2jR8Rm06fVJSmZSZ1yGcF0FiB7/pozHhuRUieXwh9+529P0HgL2sRXsZTxGYFKQ2ySD8zgW6j6wlWbw11RdaP8iXe7m14VKzFYcHRp8Gl0xl/ZkhwCo03OCT8Vugv2940Hh95cqapSVFQQH7Cq6rfEGBLjI3jIyJb6flIusVAkPUAaaRm4JckNGg4Rr1GVqvMSygm6cXJIIvcENgYiM1ycupDnuR1M2khQKUkpDhfv+ffFoxupIKi2Ht+hGi4jOABNSKvLTYhyWIDA7EOfYGMzvFNJFfw8aVjrR65KJYSpL7uGv2LjPeNLw7VacaWdKlqNcwMHJAKnRyAG3v8AWFXD5QOjJUlLCpKVKbJa+HB9wPrEOHFHlh5a6wkqBSBcBQ5+YH91WOghWrBJJvyB6GeoSVICkhC1cwOS1Jt9PkI94QkHT6h/4DkdVdcwfwbTJVpZqjLKlBRpIDsaRn90Wd+x6QJwdJ+z6lgbBHX945b+cFZsZO7r5G/E+ZMmZQkVS0nl7K7lxe74ubFnjKT7ud2wcwXJ161ABaiUITSATYOSRY22PyjtVLspiCKdh/F9SA59u0aC28ghHY6ZHh6wJM1xmwLnOff+8Oky0DhiyUp8zzEMp+ag/hbo7H/iC+HcLlHh65hSCoGxtYtcvn2/o8Ba7iEr7CJdDTCE3a7MLm9xyv8A6x0urlbx8iOdywuovm8PAkIm1klTCnpy5+Y+sLZb1AEOarh+wY/UnMXy9XZICQKU3LZFIyYHkzCqb3qDe1ook82WipK7NTOAPDp33SU0zEcwIcOGCCAbfCbkYgDWzkFKSVOrySC4duZNDP2f0xFyZ/7DPT5d1TUKKgzAAEXGLl2bd4Xa8MEsAKpSb22zYv2LwkUJBfIIuZM8qWCRTzUgZ3/qXbs8ea2aoyUJJNlqfOT9Ovzi9aHlad3pJU7bF7ZsLP8AWBdWl0JDAcxD2vc3LfL27xTqW6ou43NrmVWZmsXx3AHVt8RoZMhS5UohU1LS0hgm2HcdQXd+8KfFvC/Imta92AsBb5HtmHX/AHCcJUgIRLDSkg1O5ZwD/tAhG7iqElmKaMSsciT6w10gH2RRIvXY9P8ADx3YH69YAno+6Qe6tu/y/XaLZOq/ZzK/jr36JA/MxV8FXlDLxCpMuc1JLymze9Vw7sGYeneEmhlgrAKgkZJPYP8AyiXEFup+w9Ta5J3JL/SI6CWFLAVjf5RkqiZKoDdCkoCWNSkzSwBDllBrAb3a+Yp8UapUzUKmL+JQQo7ZlpsRseogfQ6gJIJYMtKib7Ke4B2/nHviCcFT1lOHbDXAANvUGAlkWKpmk4VoiuZLSyx907ixykFsdcd46VyzGodKVqcElxz3v0ZOwifh/VKM6UDUSZRCW25an/8AEWHb0iGumDzZqBYpmrbqBzY68129Y53ycc7ugzUzB9omGjlssCoCwQC//wBr6wSpPk6tSKFFC5bKQlj8JwG/dUgHqD2gPjZXK1UwKDsElnNhQXT3+JX1i7RahKtfUhVIZZO/4lZp6uB8t4Wuv0LWb6UY/iHJNUzM5boz/wBohpNYUzAq2wwMBtvYQyMhK9QRMdmJLfygbQ6VH2gS1OAVNs4fDvYZvHTao7FJV4NH/wBSvEJ1c2UpmSJSW+TkexLe0VcMKgvSBJFiCG2uVGrqWs7WY9In/wBTUoTqEolppSlAFLAMb1Bh/E/raDvByz9p0tQS5SzBsBCaSeirF/fvE37USm/QmC8a1cxOmm1GpatQoKXvygXBHViH3uIXeGafs+pJIBoDXufi+jgfQbxXxGXMUhSUKNHmEBJsOozk5t2izw+gHS6pxdpbG7i6lN6Gi/Rgdo35TY2PuA8TTSuWx/8ATBzuAbdsQlXmGvEFkqS4PwM535S5v6wt1Q51episOC2nwgnTuJayAluUO9w7mwe703tZhh7v+CKKpOqKiSSkEnd+YxmqSEvsY0/h6Qs6XVFKHASkqV0AJffofoOsLqLAmrwC8T06VJCyvnCSCDkkP13II+jPGdNjDXXpLJL5S9/674eFCoMOBtJUuRkt1gKdnADAHYBLnYE0vDfhGnV9knzU1VJYOFNylQdRDuQClh1K/wCGEelQTLmEbAE3H7wD9SdrdTGl4Np1r0E0IdycA5IIOHuKKwzZUIWWBdTC8iROtmJQpMtdKFEqpFiWcZywANn6w04DKV9k1SiksUoYtuFF873hXLR91kCyrbnOOg/oYY8M4qtGinSQhwtT1FTMwuwe5Y/2gvjAXxgA4Zw9auYB0ktncdeln+cQ4mhUtSheo1Ethj1fJzeGPC9UkSwkgkgLWwJ6HoW2+T36Q1yELIss8qiGBwKjYbjG7MDi0Lue7JNTe/PA04MFf9um4b/Mwyp3729bQlGkr0qlhI5KXO91dd9vnBvBJyjploClYZgkGxKndzj22MCafUy06OYgEiYpqrG4CnHazX9YVWm+4qtN9wROnSZNZZxSHezMokN1JDesLkK5yQfl179usWpQtSUkPSOUkdeZWN+UwGM727RdI60jQI4kRo1oVfzFhi42B+jjFsCAOITCfLS7kIa2GfHfeAlEFNgHGT84P4kyaLN90n36G5t6QNqTFUUmRkaxky0kDlKmPzz6OTAU8iptnv8APIiKNhE5iqbAB0qPNv6HbaDWRkqYbx+epa0lSkqNCQ6S4LAbsHPWGssciOZXwJ/DjlFhfEK/EQaa1rAYbJDnGwKiB2AgsCVSh0qJoDlKAfqUvCvhCP2oX6lQ8iUN3Wc2YkfI2/T3jJkJ8orL1BYSLhmI+ZZi7YdMVLWTLSNgTtBElP7OS9qywY2PI6nFrggMekMU6Amt+L2ER0o5vY/kYlq0gKYbD+/84hp5lKgWdtoPQy9oYJlRSkhkVdBUxJe7X3ziK+LIQmYoS6qLNVnAgtB+5So/vl7nqNn7nAgDXKdai73Z/QNAXII8jzwrq/2mVU26X6Okiotdhkjo8X6vVBU2ap1cy1E9b/X8XyEA8C0i1zJYC2JSumn4hyKPbexvvDDiEpH3pLgpmquRc9Ab2DkRKdbjn1a3FXibiCVahfllRSQlJqyGtZixFIFz1MXcLMyXqCSXUEEmoOOYtgHqoDOYR8Xbzl0kliQXFwQWIyekaHhGqEuetwlQ8sj4bNWC7A3Yb++0ZqohktsPAnmzVGao1XpF8C9PTAv9YhoB98luoNvYuPzinXTWmKIuCBkZsD/J490E0makVFNRSCRa1h2w30h6wUS9Pgf/APUKTLRqiJTgMHBJN/U3IZvy2gvw9WZ+mBJLYZ7Apcd/xZ79oT+L9OUag1LKyoBRUogkvuSIu4Nqk+bLUmppQCi7AWbp+F7+ncwjXoRJr/zQTqZcwSTOQSFLWXCWtksbuGAOe0CcF4kEyp6FvzpLW/ExuW6d7XOIN4trimQ4N5y1rtgVFiP/ABDfyjL6fUkOBarP1H8zGjG0wwjuTsJ1T1A2YosHt8LH0uIC1HxH1hrr9OUzAlywSwJ3Ds9u5+kKtQp1E9YpFlYO0hmZSTpwoWUCQbZu7v6EfKHnh+WDL1MtLlak8rWsHJ6uMX7PCfSakfZloZRLu+wx8nb6NvFK9UuWAUkh0gZcEFJBDdCCQx6nrE2m8EXFytfYcnTEy0Uh3L3UAAz2foaSfpGdVGg0es8vTklINayL9gLtuHJ94z6jeGheSmldsY6FI8s2H4rkp/dHUPZ3t3jReHp6E6VfORNNYQAWLtLZr5uflZiYzkhAMsjle5cm4wwP+0/7hjeiRrVIZmsXDh2Nr/QfKM42aUN2BpLKRIJKF1EFlMKcsWOdwHdrs0G8GkfsOomVBgQCly7kKALCzO1zu0R4cZR0Uypaq7pSiogMKVBwzFlB/lhoT6TiXlypsul6wAC+Gd7b2UR2gJXYqTaa+xnwxSihNKQaQbkCwCiXub5ZuoiGqmkJJQOahioFVheo3LFwfqrsY84CpdmJCaVbWyf59vzinXSlJQaaqSHYszZLPcG3Y5ha9QleuiXCZSzJmkKsws/Unm6sCG946TJR9jmLZXm1C+1BNx3fN+kS4RqVJ085gWLB3weY49x+cUyNU2lWmo8x+G7W+m/07QXd+Qu7fdAWnQyayl0hLn/dS/zIECCW4Kv1t/WL0OEOXpUCkeruPZw8ChZxFUdCJvy+4b9bwdxEAmWxDGWk/J7FsNiBp0xJSABdh+V4lqzdBqcUAejZF83c+8YxQj8P66xBZc/rrEnsIgux6XghQz8QIUmYy0hJZ2HQkwaqXPpRQ9NCW+VtujQs4tqFzFhSyCWAe+B1feGErVKSlIFLUj8T/wA7ekJLhE3iKEh+EQTLnjyShg9b4vdsF7Dluw6QMTygRaCPLbdz1/h2x+hDlCmeb+w/KK4nOLmK4KGXAwR/geizt2S2/rsYhxICr2/mf5NEZf8Ahn1te2z2ivUTKm9L+rk/zheovU0fhGYoT5Jlq501tYkJdChcdyprZeK/E08lc1RXUFzVKBAZy5uP4bwV4L4hMkz1KlpqeWxS/wCErSQzg2Frd8xn9bNcBLEU7FvqwET5mQSvUBFzCokkuSSSTuTvGh4TPPnKJI+A53Yg7nJI+vrGagmVO+K7Etdv1ux9opKNotOG5UWcRW6yfTH+UdIokKvHalbqJd/1iPNORUHw9/SDWApVEY8cBEwjYM132fLB8xXwtDqb+FX/AOJA+pEW8fnqUsFX7o+t+pcX6xDgp58AgC7thxe9gRmEXsJr+GMuIIR9llFjU6iS4a5IYDOJYPv3hAnMP+It9mlhgFBRuBch1ZPY3DOObtGfSbxocG0uBylZeWSXLdgwqs53LvntCmZmGSZhC0leFISx/wAqQkHrakizQu1DVFsP0b6QYhjyMtMUeQt2qBt709vXcbwPq5lgGILJF0thLH1iH2VRllYHLYG+/wDO4/TR2sWDcMHJLA9ernNoyWTJKxrKlH7KVuBSosHvdrt2P/DQgOYcaae8kpdIN03JuD7t+P6drJibwI9QQTtjQh5GBYuDuzs3XJPa/WFcM0zfuaKbkE1N0UT8mG/z2hWTBiGHU0HEA2nTyFLEAEnINdW90ksxAAyHMZ54MmagmUEVrN3p/Dvi9jc7QC8GKoMFQ+4YkC5TlIZ1DqLgbAl/S8UanVGkhyQ1LgvcknpuH3juH6xkKDKJCTjp07Cw27wsnzyrP6/rmFUcixg3J2Sl6khJT+EkEj0f+pg2VSZC7KrDF9gHYv8AMfOFQMNZmpAlUIJuecG46hvmcAHIvDSQ81xQFLmMGLnBTewLi/y/lFEWzJdJzg/pusUwRkdBurI5P8r57wFE1zHA7BoxmiScCIzMxyTiPJmYxiSzByUBk+g3J/49IXPB3KwvsIDFkBbR48dHQwyPDHkdHRhguWBQp1Mdg2f6f2gWOjoCFQ80nExKXULgpALEfvg7dh+XrCld8fr3jo6AoqxFFJ4KIu05+K7W/mI6OhmUfB5Oz7D8ojLUxeOjowFwX6yfWqpyScv/AG7RfwfVeXMBdhgnoDHR0BrAHFVRbqtWlUtr1BRL9Qevf07esLAY9joyMopLBemeSwJsAQH2Fy3o5Pziuabx0dGN1HGg09ckXN1UhiGFxdQz+J37GEqjHR0LHlix5YdpCybJBKiUuQ4GL9iMv+iAox0dBXIVywzR6wJCwpyFJIA77GAiY6OgjJILlrR5ZB+K7H+XvAcdHRjIL0sxKXqDgpI99iO/fvARj2OgmR4ItWtxHR0YJBS4jHR0YJ0dHR0YxNJjxZjo6MBHke1R7HRjH//Z');
+    height: 500px;
+  ">
+<div
+  class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsla(0,0%,0%,0.75)] bg-fixed">
+  <div class="flex h-full items-center justify-center">
+    <div class="px-6 text-center text-white md:px-12">
+      <h1 class="mt-2 mb-16 text-5xl font-bold tracking-tight md:text-6xl xl:text-7xl">
+        Get Ready To Leave The Matirix<br /><span>Blue or Red pill</span>
+      </h1>
+      <button type="button"
+        class="rounded border-2 border-neutral-50 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-100 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200"
+        data-te-ripple-init data-te-ripple-color="light">
+        LOCK IN
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+    <!-- skills section  -->
+    
+     <!-- Section: Design Block -->
+  <section id="skills" class="mb-32 text-center">
+    <h2 class="mb-16 text-3xl font-bold">
+      Trusted by <u class="">2,000,000+</u> users
+    </h2>
+
+    <div class="grid px-6 md:grid-cols-2 lg:grid-cols-6">
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/8.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/2.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/7.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/1.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/4.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+
+      <div class="mx-auto mb-12 lg:mb-0">
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/landing-page/5.png"
+          class="max-w-[90px] dark:brightness-150" />
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+
+
+    <!-- project section  -->
+<section id="project" class="mb-32 text-center bg-slate-800">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 place-items-center">
+        <!-- TW Elements is free under AGPL, with commercial license required for specific uses. See more details: https://tw-elements.com/license/ and contact us for queries at tailwind@mdbootstrap.com --> 
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat ">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           <div
+             class="block max-w-[25rem] rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+                <div class="relative overflow-hidden bg-cover bg-no-repeat">
+                   <img
+                  class="rounded-t-lg"
+                   src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
+                 alt="" />
+                </div>
+                <div class="p-6">
+                  <p class="text-base text-neutral-600 dark:text-neutral-200">
+                   Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                  </p>
+                </div>
+                <div class="text-md text-blue-500 flex justify-between px-8">
+                 <a href="">github repo</a>
+                 <a href="">Live demo</a>
+                </div>
+         </div>
+           
+   </div>
+
+
+</section>
+
+    <!-- contact me section  -->
+    <section id="contact">
+      <!-- Container for demo purpose -->
+<div class="container my-24 mx-auto md:px-6 ">
+  <!-- Section: Design Block -->
+  <section class="mb-32">
+    <div class="relative h-[300px] overflow-hidden bg-cover bg-[50%] bg-no-repeat bg-[url('https://media.licdn.com/dms/image/C5612AQFpmq48-Rtl4g/article-cover_image-shrink_600_2000/0/1520097643995?e=2147483647&v=beta&t=d7-6Ts7ebPFBqHEC0lLijXeIYeByP-RtYSXAIRHIgw4')]"></div>
+    <div class="container px-6 md:px-12">
+      <div
+        class="block rounded-lg bg-[hsla(0,0%,100%,0.8)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-[hsla(0,0%,5%,0.7)] dark:shadow-black/20 md:py-16 md:px-12 -mt-[100px] backdrop-blur-[30px]">
+        <div class="flex flex-wrap">
+          <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:px-3 lg:mb-0 lg:w-5/12 lg:px-6">
+            <form>
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <input type="text"
+                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="exampleInput90" placeholder="Name" />
+                <label
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                  for="exampleInput90">Name
+                </label>
+              </div>
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <input type="email"
+                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="exampleInput91" placeholder="Email address" />
+                <label
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+                  for="exampleInput91">Email address
+                </label>
+              </div>
+              <div class="relative mb-6" data-te-input-wrapper-init>
+                <textarea
+                  class="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                  id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                <label for="exampleFormControlTextarea1"
+                  class="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Message</label>
+              </div>
+              <div class="mb-6 inline-block min-h-[1.5rem] justify-center pl-[1.5rem] md:flex">
+                <input
+                  class="relative float-left mt-[0.15rem] mr-[6px] -ml-[1.5rem] h-[1.125rem] w-[1.125rem] appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-neutral-300 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-[0px_0px_0px_13px_transparent] before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:ml-[0.25rem] checked:after:-mt-px checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-t-0 checked:after:border-l-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-[0px_0px_0px_13px_rgba(0,0,0,0.6)] focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca] checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:ml-[0.25rem] checked:focus:after:-mt-px checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-t-0 checked:focus:after:border-l-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent dark:border-neutral-600 dark:checked:border-primary dark:checked:bg-primary dark:focus:before:shadow-[0px_0px_0px_13px_rgba(255,255,255,0.4)] dark:checked:focus:before:shadow-[0px_0px_0px_13px_#3b71ca]"
+                  type="checkbox" value="" id="exampleCheck96" checked />
+                <label class="inline-block pl-[0.15rem] hover:cursor-pointer" for="exampleCheck96">
+                  Send me a copy of this message
+                </label>
+              </div>
+              <button type="button" data-te-ripple-init data-te-ripple-color="light"
+                class="mb-6 inline-block w-full rounded bg-primary px-6 pt-2.5 pb-2 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] lg:mb-0">
+                Send
+              </button>
+            </form>
+          </div>
+          <div class="w-full shrink-0 grow-0 basis-auto lg:w-7/12">
+            <div class="flex flex-wrap">
+              <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+                <div class="flex items-start">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M14.25 9.75v-4.5m0 4.5h4.5m-4.5 0l6-6m-3 18c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold dark:text-white">
+                      Technical support
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      support@example.com
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      +1 234-567-89
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-12 w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:w-6/12">
+                <div class="flex items-start">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold dark:text-white">
+                      Sales questions
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      sales@example.com
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      +1 234-567-89
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mb-12 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:mb-12 lg:w-full lg:px-6 xl:w-6/12">
+                <div class="align-start flex">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold dark:text-white">Press</p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      press@example.com
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      +1 234-567-89
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full shrink-0 grow-0 basis-auto md:w-6/12 md:px-3 lg:w-full lg:px-6 xl:mb-12 xl:w-6/12">
+                <div class="align-start flex">
+                  <div class="shrink-0">
+                    <div class="inline-block rounded-md bg-primary-100 p-4 text-primary">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-6 w-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M12 12.75c1.148 0 2.278.08 3.383.237 1.037.146 1.866.966 1.866 2.013 0 3.728-2.35 6.75-5.25 6.75S6.75 18.728 6.75 15c0-1.046.83-1.867 1.866-2.013A24.204 24.204 0 0112 12.75zm0 0c2.883 0 5.647.508 8.207 1.44a23.91 23.91 0 01-1.152 6.06M12 12.75c-2.883 0-5.647.508-8.208 1.44.125 2.104.52 4.136 1.153 6.06M12 12.75a2.25 2.25 0 002.248-2.354M12 12.75a2.25 2.25 0 01-2.248-2.354M12 8.25c.995 0 1.971-.08 2.922-.236.403-.066.74-.358.795-.762a3.778 3.778 0 00-.399-2.25M12 8.25c-.995 0-1.97-.08-2.922-.236-.402-.066-.74-.358-.795-.762a3.734 3.734 0 01.4-2.253M12 8.25a2.25 2.25 0 00-2.248 2.146M12 8.25a2.25 2.25 0 012.248 2.146M8.683 5a6.032 6.032 0 01-1.155-1.002c.07-.63.27-1.222.574-1.747m.581 2.749A3.75 3.75 0 0115.318 5m0 0c.427-.283.815-.62 1.155-.999a4.471 4.471 0 00-.575-1.752M4.921 6a24.048 24.048 0 00-.392 3.314c1.668.546 3.416.914 5.223 1.082M19.08 6c.205 1.08.337 2.187.392 3.314a23.882 23.882 0 01-5.223 1.082" />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ml-6 grow">
+                    <p class="mb-2 font-bold dark:text-white">Bug report</p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      bugs@example.com
+                    </p>
+                    <p class="text-neutral-500 dark:text-neutral-200">
+                      +1 234-567-89
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</div>
+<!-- Container for demo purpose -->
+    </section>
+
+</main>
+
+
+
+
+
+<footer></footer>
+
+
+
+
+
+
+
+    <script
+    type="text/javascript"
+    src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+     
+</body>
+</html>
